@@ -181,7 +181,7 @@ class lstm_seq2seq(nn.Module):
             for it in tr:
 
                 batch_loss = 0.0
-
+                
                 for b in range(n_batches):
                     # select data
                     input_batch = input_tensor[
@@ -219,6 +219,7 @@ class lstm_seq2seq(nn.Module):
 
                 # progress bar
                 tr.set_postfix(loss="{0:.3f}".format(batch_loss))
+                
 
         return losses
 
