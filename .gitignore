@@ -1,6 +1,5 @@
 #project specific
 *.DS_Store
-trained/*
 .vscode/*
 
 # Byte-compiled / optimized / DLL files
